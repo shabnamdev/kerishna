@@ -1,0 +1,23 @@
+/* Kerishna admin menu icon.
+ * Loaded through admin_enqueue_scripts instead of printing a <style> tag
+ * from PHP, keeping the plugin compliant with WordPress asset handling.
+ */
+#adminmenu .toplevel_page_shcd-kerishna .wp-menu-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#adminmenu .toplevel_page_shcd-kerishna .wp-menu-image img {
+  width: 20px !important;
+  height: 20px !important;
+  max-width: 20px !important;
+  max-height: 20px !important;
+  object-fit: contain !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  opacity: .9;
+}
+#adminmenu .toplevel_page_shcd-kerishna:hover .wp-menu-image img,
+#adminmenu .toplevel_page_shcd-kerishna.current .wp-menu-image img {
+  opacity: 1;
+}
